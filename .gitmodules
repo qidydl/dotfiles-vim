@@ -1,0 +1,6 @@
+[submodule "home/.vim/pack/qidydl/start/vim-surround"]
+	path = home/.vim/pack/qidydl/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "home/.vim/pack/qidydl/start/vim-repeat"]
+	path = home/.vim/pack/qidydl/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat
