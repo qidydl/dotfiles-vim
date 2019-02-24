@@ -4,3 +4,6 @@
 [submodule "home/.vim/pack/qidydl/start/vim-repeat"]
 	path = home/.vim/pack/qidydl/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat
+[submodule "home/.vim/pack/qidydl/start/vim-sensible"]
+	path = home/.vim/pack/qidydl/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible
