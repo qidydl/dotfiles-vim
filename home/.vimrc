@@ -24,6 +24,10 @@ set number           " turn on line numbering
 set nobackup         " do not keep a backup file
 set undolevels=500   " keep 500 levels of undo
 
+" Modelines are a frequent security risk, disable them
+set modelines=0
+set nomodeline
+
 " toggles paste mode, which temporarily disables smartness for indentation,
 " making it easier to paste
 set pastetoggle=<F2>
