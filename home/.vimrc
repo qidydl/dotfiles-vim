@@ -104,3 +104,6 @@ endif " has("autocmd")
 
 " Enable sh syntax highlighting for Pkgfiles
 au BufNewFile,BufRead *Pkgfile set filetype=sh
+
+" Enable configuration file formatting for rtorrent
+au BufNewFile,BufRead *rtorrent.rc* set filetype=conf
