@@ -5,9 +5,9 @@
 set nocompatible
 
 " Set tab settings
-set tabstop=3
-set shiftwidth=3
-set softtabstop=3
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 set copyindent       " copy previous line's indenting structure by default
@@ -28,8 +28,7 @@ set undolevels=500   " keep 500 levels of undo
 set modelines=0
 set nomodeline
 
-" toggles paste mode, which temporarily disables smartness for indentation,
-" making it easier to paste
+" toggles paste mode, which temporarily disables smartness for indentation, making it easier to paste
 set pastetoggle=<F2>
 
 let mapleader = ","  " set leader key to ,
@@ -38,8 +37,7 @@ let mapleader = ","  " set leader key to ,
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase       " case-insensitive searches...
-set smartcase        " unless we use capitals, in which case it automatically
-                     " switches to case-sensitive
+set smartcase        " unless we use capitals, in which case it automatically switches to case-sensitive
 set gdefault         " default to replacing all instances on a line
 set showmatch        " show matching brackets
 set hlsearch         " highlight search results
@@ -66,8 +64,7 @@ nnoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-" Make CTRL-Tab go to the next buffer and Shift-CTRL-Tab go to the previous
-" buffer
+" Make CTRL-Tab go to the next buffer and Shift-CTRL-Tab go to the previous buffer
 nnoremap <C-Tab> :bnext<CR>
 nnoremap <S-C-Tab> :bprevious<CR>
 
@@ -91,9 +88,8 @@ if has("autocmd")
   augroup vimrcEx
   au!
 
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
+  " When editing a file, always jump to the last known cursor position. Don't do it when the position is invalid or
+  " when inside an event handler (happens when dropping a file on gvim).
   autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g`\"" |
