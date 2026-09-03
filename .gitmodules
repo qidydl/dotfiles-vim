@@ -7,3 +7,6 @@
 [submodule "home/.vim/pack/qidydl/start/vim-sensible"]
 	path = home/.vim/pack/qidydl/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible
+[submodule "home/.vim/pack/qidydl/start/vim-airline"]
+	path = home/.vim/pack/qidydl/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
