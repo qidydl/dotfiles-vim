@@ -17,7 +17,7 @@ set hidden           " unloaded buffers are hidden rather than closed
 set wildmode=list:longest
 set visualbell       " flash the screen for errors
 if exists("+cursorline")
-   set cursorline    " highlight the line the cursor is on
+    set cursorline    " highlight the line the cursor is on
 endif
 
 set number           " turn on line numbering
@@ -49,7 +49,7 @@ set wrap             " enable line wrapping
 set textwidth=120
 set formatoptions=cqrno
 if exists('+colorcolumn')
-   set colorcolumn=120
+    set colorcolumn=120
 endif
 
 set list             " show hidden characters
@@ -84,18 +84,18 @@ nnoremap <C-t> <C-w>v<C-w>l
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
-  " Put these in an autocmd group, so that we can delete them easily.
-  augroup vimrcEx
-  au!
+    " Put these in an autocmd group, so that we can delete them easily.
+    augroup vimrcEx
+    au!
 
-  " When editing a file, always jump to the last known cursor position. Don't do it when the position is invalid or
-  " when inside an event handler (happens when dropping a file on gvim).
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
+    " When editing a file, always jump to the last known cursor position. Don't do it when the position is invalid or
+    " when inside an event handler (happens when dropping a file on gvim).
+    autocmd BufReadPost *
+        \ if line("'\"") > 0 && line("'\"") <= line("$") |
+        \   exe "normal g`\"" |
+        \ endif
 
-  augroup END
+    augroup END
 endif " has("autocmd")
 
 " Enable sh syntax highlighting for Pkgfiles
